@@ -1,5 +1,3 @@
--- File: procedures/add_employee.sql
-
 CREATE OR REPLACE PROCEDURE add_employee (
     p_emp_id  IN employees.employee_id%TYPE,
     p_name    IN employees.employee_name%TYPE,
@@ -8,6 +6,8 @@ CREATE OR REPLACE PROCEDURE add_employee (
     p_dept_id IN employees.department_id%TYPE
 )
 AS
+    e_department_not_found EXCEPTION;
+    PRAGMA EXCEPTION_INIT(e_department_not_found, -2291);
 BEGIN
     -- Validate salary
     IF p_salary IS NULL OR p_salary <= 0 THEN
@@ -34,5 +34,19 @@ BEGIN
     );
 
     DBMS_OUTPUT.PUT_LINE('Employee added successfully');
+
+EXCEPTION
+    WHEN DUP_VAL_ON_INDEX THEN
+        RAISE_APPLICATION_ERROR(
+            -20002,
+            'Employee ID or email already exists'
+        );
+
+    WHEN e_department_not_found THEN
+        RAISE_APPLICATION_ERROR(
+            -20003,
+            'Department does not exist'
+        );
 END;
+
 /
