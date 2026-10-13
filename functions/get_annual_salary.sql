@@ -8,7 +8,7 @@ AS
 BEGIN
     IF p_emp_id IS NULL OR p_emp_id <= 0 THEN
         RAISE_APPLICATION_ERROR(
-            -20010,
+            -20010, 
             'Employee ID must be a positive number'
         );
     END IF;
