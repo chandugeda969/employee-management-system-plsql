@@ -1,8 +1,8 @@
--- File: sql/02_insert_sample_data.sql
+
 
 -- Insert departments first
 INSERT INTO departments (department_id, department_name)
-VALUES (10, 'IT');
+VALUES (10, 'IT');x
 
 INSERT INTO departments (department_id, department_name)
 VALUES (20, 'HR');
