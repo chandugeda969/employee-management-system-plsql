@@ -21,18 +21,22 @@ This project is developed for learning, practical database development, and inte
 - Oracle FreeSQL
 - GitHub
 
-## Planned Features
+## Implemented Features
 
 1. Create and manage departments.
-2. Add a new employee.
+2. Add new employees using a stored procedure.
 3. Retrieve employee details by employee ID.
 4. List employees by department.
-5. Update employee salary.
+5. Update employee salaries with validation.
 6. Transfer employees between departments.
 7. Delete employee records.
 8. Handle invalid inputs and database exceptions.
-9. Manage transactions.
-10. Maintain employee audit history.
+9. Calculate annual salary using a PL/SQL function.
+10. Count employees overall or by department.
+11. Maintain salary change audit history using a trigger.
+12. Validate salary changes using a database trigger.
+13. Display employee and department information through a database view.
+14. Verify database object validity and check compilation errors.
 
 ## Database Design
 
