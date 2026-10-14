@@ -83,13 +83,13 @@ This project is developed for learning, practical database development, and inte
 
 ## Project Status
 
-**Status: In Development**
+**Status: Core Implementation Completed**
 
-The core database components have been implemented, including tables, stored procedures, functions, triggers, and a view.
+The Employee Management System has been implemented using Oracle SQL and PL/SQL.
 
-The database objects have been verified as valid, and Oracle reports no compilation errors for the current schema.
+The project includes database tables, stored procedures, functions, triggers, and a view to manage employee information and demonstrate database programming concepts.
 
-Remaining work includes final edge-case verification.
+All implemented database objects were verified as valid, and Oracle reported no compilation errors in the current schema.
 
 ## Learning Outcomes
 
