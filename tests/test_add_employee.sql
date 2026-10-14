@@ -4,7 +4,7 @@
 SET SERVEROUTPUT ON;
 
 -- TEST 1: Add a valid employee
-BEGIN
+BEGIN 
     add_employee(
         201,
         'Test Employee',
