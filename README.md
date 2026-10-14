@@ -70,13 +70,16 @@ This project is developed for learning, practical database development, and inte
 
 ## How to Run
 
-1. Open Oracle FreeSQL.
-2. Create the database tables using the scripts in the `sql/` folder.
-3. Insert the sample department and employee data.
-4. Execute the procedure scripts in the `procedures/` folder.
-5. Run the test scripts and verify the results.
+1. Open Oracle FreeSQL and connect to your database.
+2. Execute `sql/01_create_tables.sql` to create the departments and employees tables.
+3. Execute `sql/02_insert_sample_data.sql` to insert sample department and employee records.
+4. Execute the stored procedure scripts in the `procedures/` folder.
+5. Execute the function scripts in the `functions/` folder.
+6. Execute the trigger scripts in the `triggers/` folder.
+7. Execute `views/employee_details_view.sql` to create the employee details view.
+8. Test the procedures, functions, triggers, and view using SQL statements in FreeSQL.
 
-Execute table creation scripts before inserting data or creating procedures that depend on those tables.
+**Important:** Create the tables before inserting sample data or creating database objects that depend on those tables. Run each script in the appropriate order and verify that it executes successfully before continuing.
 
 ## Project Status
 
