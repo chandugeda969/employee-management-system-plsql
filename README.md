@@ -61,10 +61,11 @@ This project is developed for learning, practical database development, and inte
 ## Project Structure
 
 - `sql/` — Table creation, constraints, and sample data.
-- `procedures/` — Employee management procedures.
-- `functions/` — Reusable database functions.
-- `triggers/` — Automatic database actions and audit logic.
-- `tests/` — Test scripts and validation scenarios.
+- `procedures/` — Stored procedures for employee management operations.
+- `functions/` — Functions for annual salary calculation and employee counting.
+- `triggers/` — Salary validation and salary audit triggers.
+- `views/` — Views for displaying employee and department details.
+- `tests/` — Reserved for future test scripts and validation scenarios.
 - `docs/` — Database design and project documentation.
 
 ## How to Run
