@@ -83,9 +83,13 @@ This project is developed for learning, practical database development, and inte
 
 ## Project Status
 
-In Development
+**Status: In Development**
 
-Features and documentation will be updated as the project progresses.
+The core database components have been implemented, including tables, stored procedures, functions, triggers, and a view.
+
+The database objects have been verified as valid, and Oracle reports no compilation errors for the current schema.
+
+Remaining work includes final edge-case verification.
 
 ## Learning Outcomes
 
